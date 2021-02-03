@@ -10,12 +10,23 @@ jobs:
       apt:
         packages:
         - maven
+  - os: linux
+    arch: ppc64le
+    jdk: openjdk8
+    addons:
+      apt:
+        packages:
+        - maven
+  - os: linux
+    arch: ppc64le
+    jdk: openjdk11
+    addons:
+      apt:
+        packages:
+        - maven
 jdk:
 - openjdk8
 - openjdk11
-arch:
-  - amd64
-  - ppc64le
 cache:
   directories:
   - "$HOME/.m2"
